@@ -21,6 +21,7 @@ function App() {
         ></Route>
         <Route path="*" element={<NoMatch></NoMatch>}></Route>
         <Route path="products" element={<Products></Products>}>
+          <Route index element={<FeaturedProducts></FeaturedProducts>}></Route>
           <Route
             path="featured"
             element={<FeaturedProducts></FeaturedProducts>}
